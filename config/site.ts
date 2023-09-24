@@ -40,10 +40,12 @@ export const siteConfig = {
 		},
 	],
 	links: {
-		github: "https://github.com/nextui-org/nextui",
-		twitter: "https://twitter.com/getnextui",
-		docs: "https://nextui.org",
-		discord: "https://discord.gg/9b6yyZKmH4",
-    	instagram: "https://instagram.com/"
+		github: "",
+		twitter: "",
+		docs: "",
+		// discord link set
+		discord: "hhttps://discord.gg/aJ4P2C3h",
+		// instagram link set
+    	instagram: "https://instagram.com/therapyforteens_"
 	},
 };
