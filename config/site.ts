@@ -46,6 +46,7 @@ export const siteConfig = {
 		// discord link set
 		discord: "hhttps://discord.gg/aJ4P2C3h",
 		// instagram link set
-    	instagram: "https://instagram.com/therapyforteens_"
+    	instagram: "https://instagram.com/therapyforteens_",
+		whatsapp:"https://chat.whatsapp.com/HhH0snPPzcq4WIDYoKWbsC"
 	},
 };

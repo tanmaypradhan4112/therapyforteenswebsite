@@ -16,10 +16,10 @@ import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
 
-import { ThemeSwitch } from "@/components/theme-switch";
 import {
 	DiscordIcon,
-	InstagramIcon
+	InstagramIcon,
+	WhatsappIcon
 } from "@/components/icons";
 
 
@@ -31,7 +31,7 @@ export const Navbar = () => {
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
 						<img width="20%" src="/img/TFTlogo.png" alt="" />
-						<p className="font-bold text-inherit text-2xl">Therapy for Teens</p>
+						<p className="font-bold text-gray-500 text-2xl">Therapy for Teens</p>
 					</NextLink>
 				</NavbarBrand>
 
@@ -66,11 +66,15 @@ export const Navbar = () => {
 					<Link isExternal href={siteConfig.links.discord} aria-label="Discord">
 						<DiscordIcon className="text-default-500" />
 					</Link>
+
+					<Link isExternal href={siteConfig.links.whatsapp} aria-label="Whatsapp">
+						<WhatsappIcon className="text-default-500" />
+					</Link>
 				</NavbarItem>
 			</NavbarContent>
 
 			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-				<ThemeSwitch />
+				{/* <ThemeSwitch /> */}
 				<NavbarMenuToggle />
 			</NavbarContent>
 
