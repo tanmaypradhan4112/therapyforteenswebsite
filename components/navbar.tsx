@@ -19,7 +19,7 @@ import clsx from "clsx";
 import {
 	DiscordIcon,
 	InstagramIcon,
-	WhatsappIcon
+	WhatsAppIcon
 } from "@/components/icons";
 
 
@@ -53,11 +53,13 @@ export const Navbar = () => {
 				</ul>
 			</NavbarContent>
 
+
 			{/* Social Media Icon */}
 			<NavbarContent
 				className="hidden sm:flex basis-1/5 sm:basis-full items-center"
 				justify="end"
 			>
+				
 				<NavbarItem className="hidden sm:flex gap-2">
 					<Link isExternal href={siteConfig.links.instagram} aria-label="Instagram">
 						<InstagramIcon className="text-default-500" />
@@ -68,7 +70,7 @@ export const Navbar = () => {
 					</Link>
 
 					<Link isExternal href={siteConfig.links.whatsapp} aria-label="Whatsapp">
-						<WhatsappIcon className="text-default-500" />
+						<WhatsAppIcon className="text-default-500" />
 					</Link>
 				</NavbarItem>
 			</NavbarContent>

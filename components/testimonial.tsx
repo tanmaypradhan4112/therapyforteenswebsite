@@ -77,13 +77,16 @@ const posts = [
 
 export const Testimonial = () => {
     return (
-        <div className="py-10 sm:py-10">
+        <div className="relative py-10 sm:py-10 ">
+            <div className="absolute inset-x-0 top-40 -z-10 transform-gpu blur-3xl sm:-top-20" aria-hidden="true">
+                <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff93c0] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+            </div>
             <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+
                 <div className="text-center mx-auto max-w-7xl lg:mx-0 z-100">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Testimonials</h2>
-                    <p className="mt-2 text-lg leading-8 text-gray-600">
-                        Hear is what Teens have said about us
-                    </p>
+                    <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Testimonial</h2>
+                    <p className="mt-6 text-lg leading-8 text-gray-900">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+
                 </div>
 
                 <div className="mx-auto mt-2 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -106,6 +109,10 @@ export const Testimonial = () => {
                         </article>
                     ))}
                 </div>
+            </div>
+
+            <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+                <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
             </div>
         </div>
     )
